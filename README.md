@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist kaabar-jwt/yii2-jwt "*"
+php composer.phar require --prefer-dist kaabar-jwt/yii2-jwt:dev-master
 ```
 
 or add
 
 ```
-"kaabar-jwt/yii2-jwt": "*"
+"kaabar-jwt/yii2-jwt": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
