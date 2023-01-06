@@ -29,7 +29,8 @@ Implementation Steps
 - Add JWT parameters in /config/params.php
 
 ```php
-<?php return [
+<?php 
+return [
     ...
     'jwt' => [
         'issuer' => 'https://api.torrentgas.com',  //name of your project (for information only)
@@ -40,7 +41,8 @@ Implementation Steps
         //'request_time' => '+5 seconds',
     ],
     ...
-]; ?>
+]; 
+?>
 ```
 * Add component in configuration in /config/web.php for initializing JWT authentication:
 
@@ -143,4 +145,3 @@ public function actionLogin() {
 }
 ?>
 ```
-
