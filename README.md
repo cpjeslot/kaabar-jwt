@@ -1,6 +1,6 @@
 Kaabar JWT Auth Extension
 =========================
-PHP JWT (JSON Web Token) is a library that allows developers to create and validate JWTs (JSON Web Tokens) in PHP. A JWT is a compact, URL-safe way to represent claims that can be transferred between two parties. It is typically used to securely transmit information between a server and a client, such as an API request or a user login session.  The PHP JWT library provides functions for creating JWTs with a variety of options, including custom claims and algorithms for signing and verifying the JWT. It also includes support for common JWT libraries such as JWT-PHP and firebase/php-jwt.  One of the benefits of using JWTs with PHP is that they can be easily integrated into web applications and APIs. They allow for secure communication between the server and client without the need for storing session data on the server, making them ideal for stateless applications.  Overall, PHP JWT is a useful tool for developers looking to implement JWT authentication and authorization in their PHP projects.
+The Yii2 JWT extension is a tool for implementing JWT (JSON Web Token) authentication in Yii2 applications. It allows developers to create APIs that require authentication and authorization, ensuring that only authorized users can access certain resources. The extension provides a simple and flexible way to implement JWT authentication in Yii2, using the JWT library and following the JWT specification. It includes support for creating and verifying JWT tokens, as well as handling token expiration and refresh. The Yii2 JWT extension can be easily integrated into any Yii2 application, making it a powerful tool for API authentication and authorization.
 
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
@@ -33,8 +33,8 @@ Implementation Steps
 return [
     ...
     'jwt' => [
-        'issuer' => 'https://api.torrentgas.com',  //name of your project (for information only)
-        'audience' => 'https://frontend.torrentgas.com',  //description of the audience, eg. the website using the authentication (for info only)
+        'issuer' => 'https://api.example.com',  //name of your project (for information only)
+        'audience' => 'https://example.com',  //description of the audience, eg. the website using the authentication (for info only)
         'id' => 'AMqey0yAVrqmhR82RMlWB3zqMpvRP0zaaOheEeq2tmmcEtRYNj',  //a unique identifier for the JWT, typically a random string
         'expire' => '+1 hour',  //the short-lived JWT token is here set to expire after 1 Hours.
         'request_time' => '+1 minute',
