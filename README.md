@@ -125,6 +125,7 @@ private function generateJwt(\app\models\User $user) {
 
 ```php
 <?php
+
 public function actionLogin() {
     $model = new \app\models\LoginForm();
     if ($model->load(Yii::$app->request->getBodyParams()) && $model->login()) {
@@ -143,5 +144,6 @@ public function actionLogin() {
         return $model;
     }
 }
+
 ?>
 ```
